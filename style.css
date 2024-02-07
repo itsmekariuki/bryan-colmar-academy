@@ -2,6 +2,10 @@ html {
     font-size: 16px;
 }
 
+body {
+    max-width: 100vw;
+    margin: 0;
+}
 /* Header */
 
 .desktop {
@@ -126,6 +130,7 @@ nav ul li {
         flex-flow: column wrap;
         justify-content: flex-start;
         padding: 0;
+        max-width: 100vw;
     }
 
     .learn_img {
@@ -147,3 +152,102 @@ nav ul li {
 }
 
 /* End of learn something new */
+
+/* Start of practice section */
+
+.mobile_practice {
+    display: none;
+}
+
+.desktop_practice {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 2rem;
+    font-family: "Poppins";
+}
+
+.desktop_practice .left {
+    width: 60%;
+    height: auto;
+    box-sizing: border-box;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.desktop_practice .left img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.desktop_practice .right {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.desktop_card {
+    width: 100%;
+    display: flex;
+    align-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+.desktop_card_img {
+    width: 35%;
+    height: auto;
+    padding: 0;
+    margin: 0 1rem 0 0;
+}
+
+.desktop_card_img img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
+}
+
+.desktop_card_text {
+    width: 65%;
+    padding: 0;
+    align-content: center;
+}
+
+.desktop_card_text h4 {
+    margin: 0;
+}
+
+.desktop_card_text a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 640px) {
+    .desktop_practice {
+        display: none;
+    }
+
+    .mobile_practice {
+        display: flex;
+        flex-flow: column wrap;
+        max-width: 100vw;
+        padding: 1rem;
+        font-family: "Poppins";
+    }
+
+    .card {
+        margin-bottom: 4rem;
+    }
+
+    .card h3, .card p, .card a {
+        padding-left: 1rem;
+    }
+    
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* End of practice section */
