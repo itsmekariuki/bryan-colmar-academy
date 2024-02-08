@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
 }
 /* Header */
 
@@ -327,3 +328,95 @@ nav ul li {
 }
 
 /* End of Start Learning Section */
+.thesis_mobile {
+    display: none;
+}
+
+.thesis_desktop {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem 0;
+    font-family: "Poppins";
+    align-items: center;
+}
+
+.flex_thesis {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.flex_thesis_left {
+    width: 60%;
+    height: auto;
+    box-sizing: border-box;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.flex_thesis_left video{
+    width: 100%;
+    height: auto;
+}
+
+
+.flex_thesis_right {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    margin-top: 0;
+}
+
+.right_card {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.right_card_img {
+    width: 35%;
+    padding: 1rem;
+    height: auto;
+    margin: 0;
+}
+
+.right_card img {
+    width: 100%;
+    height: auto;
+}
+
+.right_card_text {
+    width: 65%;
+    margin: 0;
+    padding: 0;
+}
+
+#fisma {
+    background-color: rgb(214, 214, 214);
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 640px) {
+    .thesis_desktop {
+        display: none;
+    }
+
+    .thesis_mobile {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .thesis_mobile video {
+        width: 100%;
+        height: auto;
+        margin: 1rem 0;
+    }
+}
+
+/* End of thesis section */
