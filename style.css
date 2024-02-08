@@ -420,3 +420,24 @@ nav ul li {
 }
 
 /* End of thesis section */
+
+/* Start of footer */
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+}
+
+@media only screen and (max-width: 640px) {
+    .terms {
+        display: none;
+    }
+}
+
+/* End of footer */
